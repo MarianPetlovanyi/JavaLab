@@ -1,0 +1,12 @@
+package ua.lviv.iot.lab2.manager;
+
+import ua.lviv.iot.lab2.manager.Gym;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Gym gym1=new Gym();
+
+    }
+
+}
