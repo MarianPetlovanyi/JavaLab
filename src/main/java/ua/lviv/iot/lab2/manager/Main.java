@@ -1,4 +1,5 @@
-package com.ua.lviv.iot.lab2.manager;
+package ua.lviv.iot.lab2.manager;
+
 
 public class Main {
 

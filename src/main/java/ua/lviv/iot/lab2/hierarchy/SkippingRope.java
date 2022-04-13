@@ -1,7 +1,9 @@
-package com.ua.lviv.iot.lab2.hierarchy;
+package ua.lviv.iot.lab2.hierarchy;
+
+import lombok.*;
 
 public class SkippingRope extends Machine {
-    int frequencyPerMinute;
+    private int frequencyPerMinute;
     public SkippingRope(int cashPerMinute, int caloriesPerMinute, int exerciseTime, String name, int frequencyPerMinute) {
         super(cashPerMinute, caloriesPerMinute, exerciseTime, name);
         this.frequencyPerMinute=frequencyPerMinute;

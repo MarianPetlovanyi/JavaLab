@@ -1,6 +1,6 @@
-package com.ua.lviv.iot.lab2.manager;
+package ua.lviv.iot.lab2.manager;
 
-import com.ua.lviv.iot.lab2.hierarchy.Machine;
+import ua.lviv.iot.lab2.hierarchy.Machine;
 
 import java.lang.reflect.Array;
 import java.util.*;
