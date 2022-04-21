@@ -8,7 +8,6 @@ public class Treadmill extends Machine {
         super(cashPerMinute, caloriesPerMinute, exerciseTime,  name);
         this.maxSpeed=maxSpeed;
     }
-
     @Override
     public String doExercise() {
         return "You have to do this exercise ("+this.getName()+") for "+ this.getExerciseTime()+ " minutes and you will lose "+
