@@ -1,7 +1,8 @@
-package com.ua.lviv.iot.lab2.hierarchy;
+package ua.lviv.iot.lab2.hierarchy;
+
 
 public class Treadmill extends Machine {
-    protected int maxSpeed;
+    private int maxSpeed;
 
     public Treadmill(int cashPerMinute, int caloriesPerMinute, int exerciseTime,int maxSpeed, String name) {
         super(cashPerMinute, caloriesPerMinute, exerciseTime,  name);

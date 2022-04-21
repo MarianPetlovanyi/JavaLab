@@ -1,7 +1,7 @@
-package com.ua.lviv.iot.lab2.hierarchy;
+package ua.lviv.iot.lab2.hierarchy;
 
 public class StationaryBike extends Machine {
-    int maxRPM;
+    private int maxRPM;
     public StationaryBike(int cashPerMinute, int caloriesPerMinute, int exericeseTime, int maxRPM, String name) {
         super(cashPerMinute, caloriesPerMinute,exericeseTime, name);
         this.maxRPM=maxRPM;

@@ -1,7 +1,8 @@
-package com.ua.lviv.iot.lab2.hierarchy;
+package ua.lviv.iot.lab2.hierarchy;
 enum hardness{
     EASY,MEDIUM,HARD
 }
+
 public abstract class Machine {
     private int cashPerMinute;
     private int caloriesPerMinute;
@@ -47,4 +48,14 @@ public abstract class Machine {
         this.setExerciseTime(exerciseTime);
     }
     public abstract String doExercise();
+
+    @Override
+    public String toString() {
+        return "Machine{" +
+                "cashPerMinute=" + cashPerMinute +
+                ", caloriesPerMinute=" + caloriesPerMinute +
+                ", exerciseTime=" + exerciseTime +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
