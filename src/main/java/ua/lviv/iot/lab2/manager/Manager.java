@@ -30,8 +30,10 @@ public class Manager {
     System.out.println("End.");
   }
 
-  Comparator cashPerMinuteComparator = Comparator.comparing(Machine::getCashPerMinute);
-  Comparator caloriesPerMinuteComparator = Comparator.comparing(Machine::getCaloriesPerMinute);
+  Comparator cashPerMinuteComparator =
+      Comparator.comparing(Machine::getCashPerMinute);
+  Comparator caloriesPerMinuteComparator =
+      Comparator.comparing(Machine::getCaloriesPerMinute);
 
   public void sortArrayByCash() {
     Arrays.sort(getArrOfMachines(), cashPerMinuteComparator);

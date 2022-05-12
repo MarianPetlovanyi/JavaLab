@@ -38,35 +38,34 @@ public abstract class Machine {
   public void setCaloriesPerMinute(int caloriesPerMinute) {
     this.caloriesPerMinute = caloriesPerMinute;
   }
-  
-  protected Machine() {
 
-  }
-
-  protected Machine(int cashPerMinute, int caloriesPerMinute, int exerciseTime, String name) {
+  protected Machine(int cashPerMinute, int caloriesPerMinute,
+      int exerciseTime, String name) {
     this.setCashPerMinute(cashPerMinute);
     this.setCaloriesPerMinute(caloriesPerMinute);
     this.setName(name);
     this.setExerciseTime(exerciseTime);
   }
-  
+
   public abstract String doExercise();
-  
+
   public String getHeaders() {
     return "cashPerMinute;caloriesPerMinute;exerciseTime;name";
   }
 
   public String toCSV() {
-    return String.format("%d; %d; %d; %s", getCashPerMinute(), getCaloriesPerMinute(), getExerciseTime(), getName());
+    return String.format("%d; %d; %d; %s",
+        getCashPerMinute(), getCaloriesPerMinute(),
+        getExerciseTime(), getName());
   }
 
   @Override
   public String toString() {
-    return "Machine{" +
-        "cashPerMinute=" + cashPerMinute +
-        ", caloriesPerMinute=" + caloriesPerMinute +
-        ", exerciseTime=" + exerciseTime +
-        ", name='" + name + '\'' +
-        '}';
+    return "Machine{"
+        + "cashPerMinute=" + cashPerMinute
+        + ", caloriesPerMinute=" + caloriesPerMinute
+        + ", exerciseTime=" + exerciseTime
+        + ", name='" + name + '\''
+        + '}';
   }
 }
