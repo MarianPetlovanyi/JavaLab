@@ -15,39 +15,39 @@ import ua.lviv.iot.lab2.hierarchy.StationaryBike;
 import ua.lviv.iot.lab2.hierarchy.Treadmill;
 
 class GymTest {
-	private Manager manager;
-	private Treadmill treadmill1;
-	private StationaryBike stationaryBike1;
-	private SkippingRope skippingRope1;
-	private Gym gym;
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+  private Manager manager;
+  private Treadmill treadmill1;
+  private StationaryBike stationaryBike1;
+  private SkippingRope skippingRope1;
+  private Gym gym;
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
+  @BeforeAll
+  static void setUpBeforeClass() throws Exception {
+  }
 
-	@BeforeEach
-	void setUp() throws Exception {
-		treadmill1=new Treadmill(10, 5, 5, 10,"treadmill");
-	    stationaryBike1=new StationaryBike(20, 10, 10, 1000, "starionarybike");
-	    skippingRope1=new SkippingRope(0,10, 15, "skakalka", 120);
-		Machine[] machines={treadmill1, stationaryBike1, skippingRope1};
-		manager = new Manager(machines);
-	}
+  @AfterAll
+  static void tearDownAfterClass() throws Exception {
+  }
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+  @BeforeEach
+  void setUp() throws Exception {
+    treadmill1 = new Treadmill(10, 5, 5, 10, "treadmill");
+    stationaryBike1 = new StationaryBike(20, 10, 10, 1000, "starionarybike");
+    skippingRope1 = new SkippingRope(0, 10, 15, "skakalka", 120);
+    Machine[] machines = { treadmill1, stationaryBike1, skippingRope1 };
+    manager = new Manager(machines);
+  }
 
-	@Test
-	void testGymConstructor() {
-		gym=new Gym(manager);
-		Assertions.assertNotNull(gym);
-		Assertions.assertEquals(manager,gym.getManager());
+  @AfterEach
+  void tearDown() throws Exception {
+  }
 
-	}
-	
+  @Test
+  void testGymConstructor() {
+    gym = new Gym(manager);
+    Assertions.assertNotNull(gym);
+    Assertions.assertEquals(manager, gym.getManager());
+
+  }
 
 }
